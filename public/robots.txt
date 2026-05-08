@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://monsieur-billy-james-countdown.vercel.app/sitemap.xml
