@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-accent-blue: #00f0ff;
+  --color-accent-gold: #ffd700;
+  --color-glass-surface: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-[#030303] text-white font-sans antialiased selection:bg-accent-blue/30 overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-glass-surface backdrop-blur-xl border border-glass-border rounded-3xl;
+  }
+  
+  .text-glow-blue {
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  }
+
+  .animated-gradient {
+    background: linear-gradient(
+      -45deg, 
+      #030303, 
+      #080808, 
+      #0c0c0c, 
+      #030303
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
+
+.wall-of-wishes {
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
