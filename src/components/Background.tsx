@@ -32,7 +32,7 @@ export default function Background() {
 
       {/* Background Images */}
       <motion.img
-        src="input_file_0.png"
+        src="photo1.jpeg"
         referrerPolicy="no-referrer"
         className="absolute top-[10%] right-[-5%] w-[400px] h-[600px] object-cover opacity-[0.08] grayscale blur-[2px]"
         animate={{
@@ -47,7 +47,7 @@ export default function Background() {
       />
 
       <motion.img
-        src="input_file_1.png"
+        src="photo2.jpeg"
         referrerPolicy="no-referrer"
         className="absolute bottom-[5%] left-[-5%] w-[450px] h-[650px] object-cover opacity-[0.08] grayscale blur-[2px]"
         animate={{
@@ -62,7 +62,7 @@ export default function Background() {
       />
 
       <motion.img
-        src="input_file_2.png"
+        src="photo.jpeg"
         referrerPolicy="no-referrer"
         className="absolute bottom-[20%] right-[10%] w-[350px] h-[550px] object-cover opacity-[0.05] grayscale blur-[4px]"
         animate={{
